@@ -340,7 +340,7 @@ export default {
     async submitForm() {
       try {
         const scriptURL =
-          "https://script.google.com/macros/s/AKfycbw-XmpalaHxpdf5hCtJcY6JLe1lNDl61P_vnnkwAh7sCzhrpptofjtlV4eXiDmUqgOv/exec"; // same web app URL for Sheets
+          "https://script.google.com/macros/s/AKfycbxmwGojbn-1daqkQcgvf615WeYnce5rLHwU0RfDu6kuYbbrqPpo7R-QFAmAawNR9hdB/exec"; // same web app URL for Sheets
         const payload = { ...this.form };
 
         const response = await fetch(scriptURL, {
