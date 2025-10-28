@@ -1,0 +1,154 @@
+---
+
+---
+
+<div class="w-full flex flex-col lg:flex-row gap-[16px]">
+  <div class="w-fit h-fit flex flex-col md:flex-row lg:flex-col gap-[16px]">
+    <!-- card 1 -->
+    <div
+      class="card card-1 w-full lg:w-[336px] 2xl:w-[445px] h-[379px] p-[40px] md:p-[48px] flex flex-col justify-between"
+    >
+      <h4
+        class="txt-dark text-[56px] 2xl:text-[64px] font-extrabold font-cg leading-[110%] tracking-[-4px]"
+      >
+        92%
+      </h4>
+      <p
+        class="w-full text-black/100 font-rd text-[22px] 2xl:text-[24px] font-bold leading-[110%] tracking-[-1px]"
+      >
+        Of Students discovered new career interests
+      </p>
+      <p
+        class="text-black/50 font-rd text-[16px] font-semibold leading-[110%] tracking-[-0.5px]"
+      >
+        Our workshops opened doors to paths they never knew existed
+      </p>
+    </div>
+    <!-- card 2 -->
+    <div
+      class="card card-2 w-full lg:w-[336px] 2xl:w-[445px] h-[379px] p-[40px] md:p-[48px] hidden md:flex flex-col justify-between"
+    >
+      <h4
+        class="txt-light text-[56px] 2xl:text-[64px] font-extrabold font-cg leading-[110%] tracking-[-4px]"
+      >
+        78%
+      </h4>
+      <p
+        class="w-full text-white/100 font-rd text-[22px] 2xl:text-[24px] font-bold leading-[110%] tracking-[-1px]"
+      >
+        Improved the quality of their resumes and applications
+      </p>
+      <p
+        class="text-white/50 font-rd text-[16px] font-semibold leading-[110%] tracking-[-0.5px]"
+      >
+        Hands-on coaching translates passion into professional storytelling
+      </p>
+    </div>
+  </div>
+  <div class="w-full flex flex-col gap-[16px]">
+    <!-- card 3 -->
+    <div class="card card-3 h-[379px] md:h-[337px] p-[32px] hidden md:flex items-end justify-start">
+      <p class="text-[20px] txt-grad-light font-bold tracking-[-0.5px]">
+        300+ Mentor Connections Made
+      </p>
+    </div>
+
+    <div class="w-full h-fit flex flex-col md:flex-row gap-[16px]">
+      <!-- card 4 -->
+      <div
+        class="card card-4 w-full lg:w-[494px] 2xl:w-[560px] h-[379px] md:h-[421px] p-[32px] flex items-end justify-start"
+      >
+        <p class="text-[20px] txt-grad-light font-bold tracking-[-0.5px]">
+          100% Student Satisfaction
+        </p>
+      </div>
+
+      <!-- card 5 -->
+      <div
+        class="card card-5 w-full lg:w-[322px] 2xl:w-[386px] h-[379px] md:h-[421px] p-[40px] md:p-[48px] flex flex-col justify-between"
+      >
+        <h4
+          class="txt-dark text-[56px] 2xl:text-[64px] font-extrabold font-cg leading-[110%] tracking-[-4px]"
+        >
+          78%
+        </h4>
+        <p
+          class="w-full text-black/100 font-rd text-[22px] 2xl:text-[24px] font-bold leading-[110%] tracking-[-1px]"
+        >
+          Improved the quality of their resumes and applications
+        </p>
+        <p
+          class="text-black/50 font-rd text-[16px] font-semibold leading-[110%] tracking-[-0.5px]"
+        >
+          Hands-on coaching translates passion into professional storytelling
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-1 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(126deg, #d6dc20 3.27%, #b0b444 48.57%, #d6dc20 98.62%);
+    background-blend-mode: overlay;
+  }
+
+  .card-2 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(321deg, #c67c5f 1.23%, #a45f44 49.25%, #c67c5f 97.7%);
+    background-blend-mode: overlay;
+  }
+
+  .card-3 {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/home/card3img.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+
+  .card-4 {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/home/card4img.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+
+  .card-5 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(
+        321deg,
+        rgba(255, 255, 0, 0.8) 2.44%,
+        rgba(193, 193, 35, 0.8) 51%,
+        rgba(255, 255, 0, 0.8) 97.99%
+      );
+    background-blend-mode: overlay;
+  }
+
+  .card {
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+      -1px -1px 5px 0 rgba(0, 0, 0, 0.05),
+      1px 1px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .card h4.txt-dark {
+    background: linear-gradient(180deg, #000 0%, #666 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card h4.txt-light {
+    background: linear-gradient(180deg, #fff 0%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

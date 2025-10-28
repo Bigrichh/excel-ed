@@ -1,0 +1,194 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import BenefitsBento from "../components/BenefitsBento.astro";
+import ServicesPreview from "../components/ServicesPreview.astro";
+import MentorsForm from "../components/vue/MentorsForm.vue";
+
+import ArrowOutDown from "../assets/svgs/arrow-outline-down.svg";
+
+const pageTitle = "Home";
+const pageDescription =
+  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
+const ogURL = "https://design.richmnn.com";
+const keywords =
+  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  pageDescription={pageDescription}
+  ogURL={ogURL}
+  keywords={keywords}
+>
+  <!-- Section 1 - Hero -->
+  <section class="w-full h-screen pb-[16px] flex items-end">
+    <!-- Background Image -->
+    <div
+      class="hero-bg w-full h-[85.5vh] md:h-[91vh] lg:h-[86.5vh] p-[24px] md:p-[64px] rounded-[32px] overflow-clip relative flex items-end"
+    >
+      <div
+        class="absolute top-[32px] right-[32px] md:right-[64px] flex items-center gap-[8px]"
+      >
+        <p
+          class="txt-grad-light font-rd text-[18px] 2xl:text-[20px] font-extrabold leading-[130%]"
+        >
+          Scroll down
+        </p>
+        <div class="size-[22px] 2xl:size-[24px]">
+          <ArrowOutDown class="size-full animate-bounce" />
+        </div>
+      </div>
+
+      <div
+        class="w-full flex flex-col gap-[16px] md:gap-[32px] lg:gap-0 lg:flex-row lg:items-end items-start lg:justify-between justify-end"
+      >
+        <h1
+          class="txt-grad-light text-[36px] md:text-[72px] lg:text-[60px] 2xl:text-[80px] font-cg font-extrabold tracking-[-2px] md:tracking-[-4px] leading-[98%]"
+        >
+          Connecting Passion <br /> To Learning
+        </h1>
+
+        <div class="flex flex-col gap-[16px] w-full lg:w-[500px] 2xl:w-[535px]">
+          <p
+            class="font-rd text-white leading-[130%] text-[16.5px] md:text-[20px] lg:text-[18px] 2xl:text-[20px] font-bold"
+          >
+            Excel Ed empowers students across Africa to discover their passions,
+            build skills, and create impact
+          </p>
+          <div
+            class="w-full flex flex-col md:flex-row gap-[8px] md:gap-[16px] text-nowrap text-[16px] lg:text-[14.5px] 2xl:text-[16px]"
+          >
+            <a
+              href="/partners"
+              class="btn w-full lg:w-fit bg-primary text-black px-[24px] py-[12px] hover:bg-white"
+              >Bring Excel Ed to your School</a
+            >
+            <a
+              href=""
+              class="btn w-full lg:w-fit bg-transparent text-white px-[24px] py-[12px] outline-[1px] outline-white hover:bg-white hover:text-black"
+              >Join Our Mentorship Platform</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 - About -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div class="w-full flex flex-col gap-[16px]">
+      <p class="text-[12.5px] font-rd font-black text-black">About</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Turning Passions <br /> Into Purpose
+        </h2>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          We help students and young professionals discover what drives them and
+          turn that passion into impact through hands-on career development
+          workshops, mentorship, and personal development.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bento -->
+    <BenefitsBento />
+  </section>
+
+  <!-- Section 3 - Our Services -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div class="w-full flex flex-col gap-[16px]">
+      <p class="text-[12.5px] font-rd font-black text-black">Services</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Our Services
+        </h2>
+
+        <a
+          href="/services"
+          class="btn text-secondary text-[20px] font-bold! border-[1px] px-[48px] py-[18px] border-secondary hover:bg-secondary hover:text-white"
+          >Learn More</a
+        >
+      </div>
+    </div>
+
+    <!-- Services -->
+    <ServicesPreview />
+  </section>
+
+  <!-- Section 4 - Become a Mentor -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div class="w-full flex flex-col gap-[16px]">
+      <p class="text-[12.5px] font-rd font-black text-black">Register</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Become a Mentor
+        </h2>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[696px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          Our mentors help students explore their interests and take confident
+          steps toward school or work. We’re starting with a 6-month pilot to
+          lay the foundation for a full platform— where students can build
+          projects, connect with mentors, and collaborate.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="w-full flex gap-[48px]">
+      <div
+        class="formimg rounded-[32px] w-full h-[600px] md:h-[490px] p-[32px] flex items-end justify-start"
+      >
+        <p class="text-[20px] txt-grad-light font-bold tracking-[-0.5px]">
+          Guide The Next Generation
+        </p>
+      </div>
+
+      <!-- form -->
+       <div class="w-full flex-grow">
+         <MentorsForm client:load/>
+       </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero-bg {
+    background:
+      linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000 100%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url("/images/home/hero-bg.webp") lightgray 50% / cover no-repeat;
+
+    @media (max-width: 640px) {
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url("/images/home/hero-bg.webp") lightgray 55% / cover no-repeat;
+    }
+  }
+
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/home/bam-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+</style>
