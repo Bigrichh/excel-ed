@@ -249,7 +249,7 @@
         Back
       </button>
 
-      <button disbaled
+      <button 
         class="w-full btn bg-primaryy px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
         v-if="currentStep < 4"
         @click="nextStep"
@@ -257,7 +257,7 @@
         Next
       </button>
 
-      <button
+      <button disbaled
         class="w-full btn bg-primaryy px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
         v-if="currentStep === 4"
         @click="submitForm"

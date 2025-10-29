@@ -1,7 +1,5 @@
 <template>
-  <section
-    class="w-full flex flex-col items-center overflow-clip"
-  >
+  <section class="w-full flex flex-col items-center overflow-clip">
     <!-- Faqs container -->
     <div class="w-full flex flex-col gap-[24px]">
       <div
@@ -40,7 +38,6 @@
 </template>
 
 <script>
-
 export default {
   name: "FAQs",
   data() {
@@ -48,34 +45,37 @@ export default {
       activeAccordion: null, // Track which accordion is active
       faqs: [
         {
-          question: "1. Question?",
+          question:
+            "1. Can I participate if I’m not sure of my career path yet?",
           answer:
-            "Answer",
+            "Absolutely. You don’t need to have it figured out before you start. Our Passion Discovery Workshops are specifically designed to help you uncover your interests, identify your core strengths (your “superpower”), and begin building a career path from there.",
         },
         {
-          question: "2. Question?",
+          question:
+            "2. How long does each workshop or counseling session last?",
           answer:
-            "Answer",
+            "Workshops typically run for 2–3 hours, and college counseling sessions are packaged based on your needs. We offer flexible counseling plans depending on where you are in the application process.",
         },
         {
-          question: "3. Question?",
+          question: "3. Are the workshops in-person, online, or hybrid?",
           answer:
-            "Answer",
+            "Workshops are primarily held in-person for maximum engagement, but we offer online or hybrid options for international or remote students.",
         },
         {
-          question: "4. Question?",
+          question: "4. How do students choose their mentors?",
           answer:
-            "Answer",
+            "Students can select mentors from seven major industries, based on their interests and the passion project they want to build. Our matching system helps align students with mentors who best support their goals.",
         },
         {
-          question: "5. Question?",
+          question: "5. What kinds of passion projects can I build?",
           answer:
-            "Answer",
+            "Students can design projects in areas across 4 categories: Research Project, Creative Project, Tech Prototype, Community Initiative. If you're unsure, we guide you step-by-step to transform your passion into a real-world initiative or portfolio project.",
         },
         {
-          question: "6. Question?",
+          question:
+            "6. What happens if I'm not satisfied with my mentor match?",
           answer:
-            "Answer",
+            "Your growth matters to us. If you feel your mentor is not the right fit, you can request a rematch at any time during your active subscription, no questions asked",
         },
       ],
     };
