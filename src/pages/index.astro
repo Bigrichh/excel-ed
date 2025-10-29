@@ -4,15 +4,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BenefitsBento from "../components/BenefitsBento.astro";
 import ServicesPreview from "../components/ServicesPreview.astro";
 import MentorsForm from "../components/vue/MentorsForm.vue";
+import FAQs from "../components/vue/FAQs.vue";
+import Testimonials from "@/components/vue/Testimonials.vue";
 
 import ArrowOutDown from "../assets/svgs/arrow-outline-down.svg";
 
-const pageTitle = "Home";
+const pageTitle = "Excel Ed — Empowering Students to Turn Passion Into Impact";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Excel Ed helps students discover their strengths, connect with mentors, and build a clear path toward college and career success. Join workshops, mentorships, and counseling programs designed to help you grow with purpose.";
+const ogURL = "https://exceledd.com";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "student mentorship, college counseling, personal development, high school programs, student leadership, career guidance, education workshops";
 ---
 
 <BaseLayout
@@ -41,6 +43,9 @@ const keywords =
       </div>
 
       <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="50"
         class="w-full flex flex-col gap-[16px] md:gap-[32px] lg:gap-0 lg:flex-row lg:items-end items-start lg:justify-between justify-end"
       >
         <h1
@@ -61,7 +66,7 @@ const keywords =
           >
             <a
               href="/partners"
-              class="btn w-full lg:w-fit bg-primary text-black px-[24px] py-[12px] hover:bg-white"
+              class="btn w-full lg:w-fit bg-primaryy text-black px-[24px] py-[12px] hover:bg-white"
               >Bring Excel Ed to your School</a
             >
             <a
@@ -77,7 +82,12 @@ const keywords =
 
   <!-- Section 2 - About -->
   <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
-    <div class="w-full flex flex-col gap-[16px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
       <p class="text-[12.5px] font-rd font-black text-black">About</p>
       <div
         class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
@@ -98,12 +108,24 @@ const keywords =
     </div>
 
     <!-- Bento -->
-    <BenefitsBento />
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <BenefitsBento />
+    </div>
   </section>
 
   <!-- Section 3 - Our Services -->
   <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
-    <div class="w-full flex flex-col gap-[16px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
       <p class="text-[12.5px] font-rd font-black text-black">Services</p>
       <div
         class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
@@ -116,19 +138,31 @@ const keywords =
 
         <a
           href="/services"
-          class="btn text-secondary text-[20px] font-bold! border-[1px] px-[48px] py-[18px] border-secondary hover:bg-secondary hover:text-white"
+          class="btn text-secondaryy text-[20px] font-bold! border-[1px] px-[48px] py-[18px] border-secondary hover:bg-secondary hover:text-white"
           >Learn More</a
         >
       </div>
     </div>
 
     <!-- Services -->
-    <ServicesPreview />
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <ServicesPreview />
+    </div>
   </section>
 
   <!-- Section 4 - Become a Mentor -->
   <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
-    <div class="w-full flex flex-col gap-[16px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
       <p class="text-[12.5px] font-rd font-black text-black">Register</p>
       <div
         class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
@@ -150,9 +184,14 @@ const keywords =
     </div>
 
     <!-- Form Section -->
-    <div class="w-full flex gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px]"
+    >
       <div
-        class="formimg rounded-[32px] w-full h-[600px] md:h-[490px] p-[32px] flex items-end justify-start"
+        class="formimg rounded-[32px] w-full h-[450px] md:h-[600px] p-[32px] flex items-end justify-start"
       >
         <p class="text-[20px] txt-grad-light font-bold tracking-[-0.5px]">
           Guide The Next Generation
@@ -160,9 +199,95 @@ const keywords =
       </div>
 
       <!-- form -->
-       <div class="w-full flex-grow">
-         <MentorsForm client:load/>
-       </div>
+      <div class="w-full h-[600px] lg:flex-grow">
+        <MentorsForm client:load />
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 - FAQs -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">
+        Frequently Asked Questions
+      </p>
+      <h2
+        class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        FAQs
+      </h2>
+    </div>
+
+    <!-- FAQs Section -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <FAQs client:load />
+    </div>
+  </section>
+
+  <!-- Section 6 - Testimonials -->
+  <section
+    class="w-full h-fit flex flex-col items-end p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[24px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        Discover what <br />
+        our students say
+      </h2>
+    </div>
+
+    <!-- Testimonials -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <Testimonials client:load />
+    </div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="flex flex-col gap-[16px] w-full lg:w-[500px] 2xl:w-[535px]"
+    >
+      <p
+        class="font-rd text-white leading-[130%] text-[16.5px] md:text-[20px] lg:text-[18px] 2xl:text-[20px] font-bold"
+      >
+        Excel Ed empowers students across Africa to discover their passions,
+        build skills, and create impact
+      </p>
+      <div
+        class="w-full flex flex-col md:flex-row gap-[8px] md:gap-[16px] text-nowrap text-[16px] lg:text-[14.5px] 2xl:text-[16px]"
+      >
+        <a
+          href="/partners"
+          class="btn w-full lg:w-fit bg-secondaryy text-white px-[24px] py-[12px] hover:bg-white hover:text-black"
+          >Bring Excel Ed to your School</a
+        >
+        <a
+          href=""
+          class="btn w-full lg:w-fit bg-transparent text-black px-[24px] py-[12px] outline-[1px] outline-black hover:bg-white hover:text-black hover:outline-none"
+          >Join Our Mentorship Platform</a
+        >
+      </div>
     </div>
   </section>
 </BaseLayout>

@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Home";
+const pageTitle =
+  "Pricing";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Choose the mentorship plan that fits your journey. Excel Ed offers affordable, flexible pricing with monthly mentorship sessions, live resources, and professional development tools for students.";
+const ogURL = "https://exceledd.com/pricing";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "mentorship pricing, student plans, online mentorship, education subscription, college mentorship program, Excel Ed pricing";
 ---
 
 <BaseLayout
@@ -15,7 +16,191 @@ const keywords =
   ogURL={ogURL}
   keywords={keywords}
 >
-  
-Helllooo Word
+  <!-- Section 1 - Hero -->
+  <section
+    class="w-full h-fit pt-[120px] pb-[48px] md:pb-[80px] flex flex-col gap-[32px]"
+  >
+    <div
+      class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[80px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        Pricing
+      </h2>
+      <p
+        class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+      >
+        Find your mentor. Build your future. <br /> Choose the plan that fits your
+        goals and start your journey with guidance that actually gets you somewhere.
+      </p>
+    </div>
+  </section>
 
+  <!-- Section 2 - Pricing -->
+  <section
+    class="w-full h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <h2
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
+    >
+      Mentorship Platform Pricing
+    </h2>
+
+    <p
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+    >
+      Our mentorship plans are designed to meet you where you are — whether
+      you’re just getting started or ready to go deeper. Every plan includes
+      access to experienced mentors, professional resources, and a growing
+      library of live workshops and templates to help you take real steps toward
+      your goals.
+    </p>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px] md:gap-[24px]"
+    >
+      <!-- Card 1 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-1 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <div
+          class="w-full flex-col md:flex-row gap-[16px] md:gap-0 justify-between"
+        >
+          <h4
+            class="txt-dark font-cg font-extrabold text-[28px] md:text-[32px] leading-[110%] tracking-[-0.5px]"
+          >
+            Starter Plan
+          </h4>
+          <div
+            class="txt-dark flex gap-[4px] items-end txt-dark font-cg font-extrabold"
+          >
+            <p
+              class="text-[28px] md:text-[32px] leading-[110%] tracking-[-0.5px]"
+            >
+              $100
+            </p>
+            <p class="text-[14.5px] md:text-[16px] text-nowrap">
+              for your first 2 months
+            </p>
+          </div>
+        </div>
+
+        <p
+          class="font-rd font-semibold text-[16.5px] tracking-[-0.5px] leading-[130%]"
+        >
+          15% off for Discover You Workshop participants. Perfect for new
+          students exploring mentorship for the first time. Includes:
+        </p>
+
+        <div
+          class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-end"
+        >
+          <ul
+            class="list-disc pl-[20px] font-rd text-[16.5px] leading-[130%] font-semibold"
+          >
+            <li>1–2 virtual mentor sessions per month</li>
+            <li>Access to live webinars and resume workshops</li>
+            <li>Library of professional templates and guides</li>
+            <li>Flexible month-to-month membership</li>
+          </ul>
+
+          <a
+            href=""
+            class="w-full md:w-fit btn px-[16px] py-[12px] text-white bg-black hover:bg-white hover:text-black text-nowrap"
+            >Get Started</a
+          >
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <div
+          class="w-full flex-col md:flex-row gap-[16px] md:gap-0 justify-between"
+        >
+          <h4
+            class="txt-dark font-cg font-extrabold text-[28px] md:text-[32px] leading-[110%] tracking-[-0.5px]"
+          >
+            Standard Plan
+          </h4>
+          <div
+            class="txt-dark flex gap-[4px] items-end txt-dark font-cg font-extrabold"
+          >
+            <p
+              class="text-[28px] md:text-[32px] leading-[110%] tracking-[-0.5px]"
+            >
+              $45/
+            </p>
+            <p class="text-[14.5px] md:text-[16px] text-nowrap">month</p>
+          </div>
+        </div>
+
+        <p
+          class="font-rd font-semibold text-[16.5px] tracking-[-0.5px] leading-[130%]"
+        >
+          Best for ongoing growth and deeper mentor relationships. <br /> Includes:
+        </p>
+
+        <div
+          class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-end"
+        >
+          <ul
+            class="list-disc pl-[20px] font-rd text-[16.5px] leading-[130%] font-semibold"
+          >
+            <li>Continued access to your mentor</li>
+            <li>Monthly check-ins and progress tracking</li>
+            <li>Full access to Excel Ed’s resource library</li>
+            <li>Priority access to upcoming live events and guest mentors</li>
+          </ul>
+
+          <a
+            href=""
+            class="w-full md:w-fit btn px-[16px] py-[12px] text-white bg-black hover:bg-white hover:text-black text-nowrap"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .card-1 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(126deg, #d6dc20 3.27%, #b0b444 48.57%, #d6dc20 98.62%);
+    background-blend-mode: overlay;
+  }
+
+  .card-2 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(321deg, #d2a898 1.23%, #c77c5f 49.25%, #d2a898 97.7%);
+    background-blend-mode: overlay;
+  }
+
+  .card {
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+      -1px -1px 5px 0 rgba(0, 0, 0, 0.05),
+      1px 1px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .card .txt-dark {
+    background: linear-gradient(180deg, #000 0%, #666 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

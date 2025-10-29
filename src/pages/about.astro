@@ -1,12 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Home";
+import CTASection from "../components/CTASection.astro";
+
+import ImageMarquee from "@/components/vue/ImageMarquee.vue";
+
+const pageTitle = "About Excel Ed";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Excel Ed connects students to mentors, resources, and experiences that help them define their purpose and turn passion into real-world impact. Learn more about our mission, team, and approach to education.";
+const ogURL = "https://exceledd.com/about";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "about Excel Ed, student mentorship programs, educational impact, youth development, student empowerment, leadership education";
 ---
 
 <BaseLayout
@@ -15,7 +19,271 @@ const keywords =
   ogURL={ogURL}
   keywords={keywords}
 >
-  
-Helllooo Word
+  <!-- Section 1 - Hero -->
+  <section
+    class="w-full h-fit pt-[120px] pb-[48px] md:pb-[80px] flex flex-col gap-[32px]"
+  >
+    <div
+      class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[80px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        Connecting Passion <br /> To Learning
+      </h2>
+      <p
+        class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+      >
+        We believe every learner carries a spark that can shape the world. At
+        Excel Ed, our mission is to help students and young professionals
+        discover what drives them — and turn that drive into real-world impact.
+      </p>
+    </div>
 
+    <!-- Marquee -->
+    <div class="w-full">
+      <ImageMarquee client:load />
+    </div>
+  </section>
+
+  <!-- Section 2 - Our Story -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">Founder's Bio</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Our Story
+        </h2>
+        <p
+          class="w-full lg:w-[610px] xl:w-[676px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          Hi, I'm Geneva, If there is one thread that ties my journey together
+          it is a deep curiosity about how people learn, what drives them, and
+          how thoughtful classroom and curriculum design can connect students’
+          true selves to what they are learning even when resources are limited.
+          That curiosity is the foundation of Excel Ed.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px]"
+    >
+      <div
+        class="geneva rounded-[32px] overflow-clip w-full h-[500px] flex items-end justify-start"
+      >
+        <img
+          class="size-full object-cover"
+          src="/public/images/about/Geneva.webp"
+          alt="Geneva'sImage"
+        />
+        <p
+          class="absolute bottom-[32px] left-[32px] text-[20px] txt-grad-light z-20 font-bold tracking-[-0.5px]"
+        >
+          Geneva Tackie
+        </p>
+      </div>
+      <div
+        class="w-full flew-grow flex flex-col gap-[16px] lg:gap-0 justify-between py-[24px]"
+      >
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          I’ve always been deeply curious about how people learn and what drives
+          them. That curiosity became the foundation of Excel Ed — a platform
+          that connects classroom learning to purpose, passion, and possibility.
+        </p>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          My journey began at age eight on my father’s veranda, where I taught
+          imaginary students and experimented with ways to make ideas click.
+          Even then, I noticed how often learning focused on memorization rather
+          than understanding — a gap I’ve dedicated my career to bridging.
+        </p>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          Over the years, I’ve worked across education policy, consulting, and
+          program leadership in Rwanda, helping students turn curiosity into
+          meaningful action. Excel Ed is my passion project — a space to help
+          young people find clarity, confidence, and direction through
+          mentorship, college counseling, and passion discovery.
+        </p>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          I live by a simple rule: always try, never stop learning, and don’t
+          let perfect postpone progress. Everything I do is about helping
+          students grow, achieve, and connect what they learn to who they are.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 - Our Core Values -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">
+        Our Mission & What We Stand For
+      </p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Our Core Values
+        </h2>
+        <p
+          class="w-full lg:w-[610px] xl:w-[676px] 2xl:w-[696px] font-rd text-[18px] leading-[130%] font-bold text-black/50"
+        >
+          Our mission is to guide students and young professionals in uncovering
+          their passions, building practical skills, and connecting with mentors
+          who help them grow. Through hands-on workshops, career development
+          sessions, and personalized mentorship, we help learners align their
+          purpose with impact — one step at a time.
+        </p>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[16px]"
+    >
+      <!-- card-1 -->
+      <div
+        class="card card-1 p-[40px] md:p-[48px] w-full lg:w-full h-[379px] flex flex-col justify-between"
+      >
+        <h4
+          class="txt-dark font-cg text-[32px] md:text-[36px] font-extrabold leading-[110%] tracking-[-1.5px]"
+        >
+          Real Compassion
+        </h4>
+        <p
+          class="font-rd text-[16.5px] md:text-[20px] font-bold leading-[110%] md:tracking-[-1px]"
+        >
+          Our commitment is to our students. Every student should know that they
+          have something unique to give to the world.
+        </p>
+      </div>
+      <!-- card-2 -->
+      <div
+        class="card card-2 p-[40px] md:p-[48px] w-full lg:w-full h-[379px] flex flex-col justify-between"
+      >
+        <h4
+          class="txt-dark font-cg text-[32px] md:text-[36px] font-extrabold leading-[110%] tracking-[-1.5px]"
+        >
+          Excellence or Nothing
+        </h4>
+        <p
+          class="font-rd text-[16.5px] md:text-[20px] font-bold leading-[110%] md:tracking-[-1px]"
+        >
+          We work hard to make sure everything we do is thoughtful,
+          high-quality, and focused on helping you reach your goals.
+        </p>
+      </div>
+      <!-- card-4 -->
+      <div
+        class="card card-3 p-[40px] md:p-[48px] w-full lg:w-full h-[379px] flex flex-col justify-between"
+      >
+        <h4
+          class="txt-dark font-cg text-[32px] md:text-[36px] font-extrabold leading-[110%] tracking-[-1.5px]"
+        >
+          Less Talk, More Doing
+        </h4>
+        <p
+          class="font-rd text-[16.5px] md:text-[20px] font-bold leading-[110%] md:tracking-[-1px]"
+        >
+          We go beyond the buzzwords and empty motivation, instead we focus on
+          clarity, confidence, and tangible growth. We help you get to where you
+          actually want to be.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 - CTA -->
+  <div
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    data-aos-delay="50"
+    class="w-full"
+  >
+    <CTASection />
+  </div>
 </BaseLayout>
+
+<style>
+  .geneva {
+    position: relative;
+  }
+
+  .geneva::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%);
+  }
+
+  .card {
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+      -1px -1px 5px 0 rgba(0, 0, 0, 0.05),
+      1px 1px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .card h4.txt-dark {
+    background: linear-gradient(180deg, #000 0%, #666 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-1 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(128deg, #d6dc20 3.27%, #b0b444 48.57%, #d6dc20 98.62%);
+    background-blend-mode: overlay;
+  }
+
+  .card-2 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(235deg, #d2a898 1.94%, #c77c5f 50.61%, #d2a898 97.04%);
+    background-blend-mode: overlay;
+  }
+
+  .card-3 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(126deg, #f6ef24 3.27%, #a5a138 48.57%, #f6ef24 98.62%);
+    background-blend-mode: overlay;
+  }
+</style>

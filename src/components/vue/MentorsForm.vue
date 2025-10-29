@@ -9,7 +9,7 @@
       </h3>
 
       <div>
-        <p class="text-[14.5px] font-rd font-bold">
+        <p class="text-[14.5px] font-rd font-bold text-nowrap">
           Step {{ currentStep }} of 4
         </p>
       </div>
@@ -249,8 +249,8 @@
         Back
       </button>
 
-      <button
-        class="w-full btn bg-primary px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
+      <button disbaled
+        class="w-full btn bg-primaryy px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
         v-if="currentStep < 4"
         @click="nextStep"
       >
@@ -258,7 +258,7 @@
       </button>
 
       <button
-        class="w-full btn bg-primary px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
+        class="w-full btn bg-primaryy px-[32px] py-[12px] text-[18px] hover:bg-black hover:text-white"
         v-if="currentStep === 4"
         @click="submitForm"
       >
@@ -314,6 +314,7 @@ export default {
         multipleStudents: "",
         howManyStudents: "",
         agreements: [],
+        headshot: null,
       },
     };
   },
@@ -339,23 +340,28 @@ export default {
 
     async submitForm() {
       try {
-        const scriptURL =
-          "https://script.google.com/macros/s/AKfycbxmwGojbn-1daqkQcgvf615WeYnce5rLHwU0RfDu6kuYbbrqPpo7R-QFAmAawNR9hdB/exec"; // same web app URL for Sheets
-        const payload = { ...this.form };
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbyhTmIwqQkRd8FfD1kQsgXjGS33RRtKK6BOmlgB2zmk5WmKgHQsUZwakGJvWq04hBE/exec",
+          {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(this.form),
+          }
+        );
 
-        const response = await fetch(scriptURL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-            mode: "cors",
-        });
-
-        const result = await response.json();
-        if (result.status === "success") {
+        if (response.type === "opaque") {
+          // We cannot read response, but the request went through
           alert("✅ Form submitted successfully!");
-          this.resetForm();
         } else {
-          alert("❌ Error submitting form: " + result.message);
+          const result = await response.json();
+          if (result.status === "success") {
+            alert("✅ Form submitted successfully!");
+          } else {
+            alert("❌ Error submitting form: " + result.message);
+          }
         }
       } catch (err) {
         console.error("Submission error:", err);
@@ -382,6 +388,33 @@ export default {
         agreements: [],
       };
       this.currentStep = 1;
+    },
+
+    async handleFileUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      try {
+        const formData = new FormData();
+        formData.append("file", file);
+        formData.append("upload_preset", "YOUR_UPLOAD_PRESET"); // from Cloudinary
+
+        // Upload to Cloudinary
+        const response = await fetch(
+          "https://api.cloudinary.com/v1_1/YOUR_CLOUD_NAME/image/upload",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+
+        const data = await response.json();
+        this.form.headshot = data.secure_url; // Save URL to form
+        console.log("Headshot uploaded:", data.secure_url);
+      } catch (err) {
+        console.error("Headshot upload failed:", err);
+        alert("❌ Failed to upload headshot.");
+      }
     },
   },
 

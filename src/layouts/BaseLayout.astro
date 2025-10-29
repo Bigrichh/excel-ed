@@ -8,6 +8,7 @@ const { ogURL } = Astro.props;
 const { keywords } = Astro.props;
 
 import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -17,7 +18,7 @@ import NavBar from "../components/NavBar.astro";
     <meta name="generator" content={Astro.generator} />
 
     <!-- Favicon -->
-    <!-- <link
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/favicon/apple-touch-icon.png?=v2"
@@ -34,7 +35,7 @@ import NavBar from "../components/NavBar.astro";
       sizes="16x16"
       href="/favicon/favicon-16x16.png?=v2"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest?=v2" /> -->
+    <link rel="manifest" href="/favicon/site.webmanifest?=v2" />
 
     <!-- Meta Tags For SEO -->
     <meta name="description" content={pageDescription} />
@@ -100,6 +101,8 @@ import NavBar from "../components/NavBar.astro";
         <NavBar />
       </div>
       <slot />
+      <Footer />
     </main>
+    <script src="/src/scripts/aos.js"></script>
   </body>
 </html>

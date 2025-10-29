@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Contacttt from "@/components/vue/Contact.vue";
 
-const pageTitle = "Home";
+const pageTitle = "Contact Excel Ed";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Have a question or want to bring Excel Ed to your school? Reach out to our team to learn more about programs, partnerships, and student opportunities.";
+const ogURL = "https://exceledd.com/contact";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "contact Excel Ed, education inquiries, student programs, partnership inquiries, mentorship contact, school collaboration";
 ---
 
 <BaseLayout
@@ -15,7 +16,53 @@ const keywords =
   ogURL={ogURL}
   keywords={keywords}
 >
-  
-Helllooo Word
+  <!-- Section 1 - Get In Touch -->
+  <section class="w-full h-fit flex flex-col py-[120px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        Get In Touch
+      </h2>
+      <p
+        class="w-full lg:w-[610px] 2xl:w-[676px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+      >
+        Have questions about our programs, workshops, or partnerships? Drop us a
+        message and our team will get back to you shortly.
+      </p>
+    </div>
 
+    <!-- Form Section -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px]"
+    >
+      <div
+        class="formimg rounded-[32px] w-full h-[450px] p-[32px] flex items-end justify-start"
+      >
+      </div>
+
+      <!-- form -->
+      <div class="w-full h-fit md:h-[450px]">
+        <Contacttt client:load />
+      </div>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/partners/sc-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+</style>

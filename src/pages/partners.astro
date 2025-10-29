@@ -1,12 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Home";
+import BenefitsBento from "../components/BenefitsBento.astro";
+import PartnerShipOptions from "../components/PartnerShipOptions.astro";
+import Consultation from "../components/vue/Consultation.vue";
+
+import ArrowOutDown from "../assets/svgs/arrow-outline-down.svg";
+
+const pageTitle =
+  "Partner with Excel Ed";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Bring Excel Ed to your school. Partner with us to provide students with hands-on workshops, mentorship opportunities, and college readiness support designed to connect passion to purpose.";
+const ogURL = "https://exceledd.com/partners";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "school partnerships, education programs, student mentorship, college readiness, partner with Excel Ed, youth development, school workshops";
 ---
 
 <BaseLayout
@@ -15,7 +22,201 @@ const keywords =
   ogURL={ogURL}
   keywords={keywords}
 >
-  
-Helllooo Word
+  <!-- Section 1 - Hero -->
+  <section class="w-full h-screen pb-[16px] flex items-end">
+    <!-- Background Image -->
+    <div
+      class="hero-bg w-full h-[85.5vh] md:h-[91vh] lg:h-[86.5vh] p-[24px] md:p-[64px] rounded-[32px] overflow-clip relative flex items-end"
+    >
+      <div
+        class="absolute top-[32px] right-[32px] md:right-[64px] flex items-center gap-[8px]"
+      >
+        <p
+          class="txt-grad-light font-rd text-[18px] 2xl:text-[20px] font-extrabold leading-[130%]"
+        >
+          Scroll down
+        </p>
+        <div class="size-[22px] 2xl:size-[24px]">
+          <ArrowOutDown class="size-full animate-bounce" />
+        </div>
+      </div>
 
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="50"
+        class="w-full flex flex-col gap-[16px] md:gap-[32px] lg:gap-0 lg:flex-row lg:items-end items-start lg:justify-between justify-end"
+      >
+        <h1
+          class="txt-grad-light text-[36px] md:text-[72px] lg:text-[60px] 2xl:text-[80px] font-cg font-extrabold tracking-[-2px] md:tracking-[-4px] leading-[98%]"
+        >
+          Bring Excel Ed <br /> To Your School
+        </h1>
+
+        <div class="w-full lg:w-[500px] 2xl:w-[535px]">
+          <p
+            class="font-rd text-white leading-[130%] text-[16.5px] md:text-[20px] lg:text-[18px] 2xl:text-[20px] font-bold"
+          >
+            Ready to empower your students to turn passion into impact? We
+            partner with schools, universities, and organizations to help
+            students connect what they learn to who they are — and who they’re
+            becoming.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 - Why Partner With Us -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">
+        Why Partner With Us
+      </p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Empower Students <br /> Beyond the Classroom
+        </h2>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          Excel Ed bridges the gap between education and purpose. <br /> Through
+          our workshops, mentorship programs, and career development support, we
+          help students find direction, confidence, and the skills to make real-world
+          impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bento -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <BenefitsBento />
+    </div>
+  </section>
+
+  <!-- Section 3 - Partnership Options -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">Services</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Partnership Options
+        </h2>
+
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          We collaborate with schools, universities, and organizations of all
+          sizes. Every partnership is tailored to fit your school’s goals,
+          resources, and student needs.Parnerships Include:
+        </p>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full"
+    >
+      <PartnerShipOptions />
+    </div>
+  </section>
+
+  <!-- Section 4 - Schedule a Consultation -->
+  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">Schedule</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Schedule a Consultation
+        </h2>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[676px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          Schedule a consultation to explore how Excel Ed can support your
+          students’ journey toward clarity, confidence, and impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px]"
+    >
+      <div
+        class="formimg rounded-[32px] w-full h-[450px] p-[32px] flex items-end justify-start"
+      >
+      </div>
+
+      <!-- form -->
+      <div class="w-full h-fit md:h-[450px]">
+        <Consultation client:load />
+      </div>
+    </div>
+  </section>
 </BaseLayout>
+
+<style>
+  .hero-bg {
+    background:
+      linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000 100%),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url("/images/components/marquee/slider4.webp") lightgray 50% / cover
+        no-repeat;
+
+    @media (max-width: 640px) {
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, #000 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url("/images/components/marquee/slider4.webp") lightgray 55% / cover
+          no-repeat;
+    }
+  }
+
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/partners/sc-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+</style>

@@ -1,12 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const pageTitle = "Home";
+import CTASection from "../components/CTASection.astro";
+
+const pageTitle =
+  "Excel Ed Services";
 const pageDescription =
-  "Richmann - Design Engineer - designing clean, thouhtful user experiences and building the tech bringing those experiences to life.";
-const ogURL = "https://design.richmnn.com";
+  "Explore Excel Ed’s student-centered programs: Discover You Workshops, College Counseling, Resume Services, and our Mentorship Platform. Each designed to help students find direction, build confidence, and take action.";
+const ogURL = "https://exceledd.com/services";
 const keywords =
-  "Richmann Addai, software engineer, design engineer, web development, product designer, UI/UX design, technology solutions, user experiences, entrepreneurial projects, Utopia Tech, personal projects, software development, design and development, software products";
+  "college counseling, mentorship platform, resume services, student workshops, academic coaching, career guidance, student development programs";
 ---
 
 <BaseLayout
@@ -15,7 +18,543 @@ const keywords =
   ogURL={ogURL}
   keywords={keywords}
 >
-  
-Helllooo Word
+  <!-- Section 1 - Hero -->
+  <section
+    class="w-full h-fit pt-[120px] pb-[48px] md:pb-[80px] flex flex-col gap-[32px]"
+  >
+    <div
+      class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[80px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+      >
+        Explore <br />
+        Our Services
+      </h2>
+      <p
+        class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
+      >
+        Our services are designed to help students and young professionals
+        discover what drives them — and give them the tools, clarity, and
+        confidence to build a life around it. From mentorship to career
+        guidance, every program is built to make personal growth practical and
+        powerful.
+      </p>
+    </div>
+  </section>
 
+  <!-- Service 1 - Passion Discovery Workshop -->
+  <section
+    class="w-full h-fit my-[24px] flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex justify-between items-center"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
+      >
+        1. Passion Discovery Workshop
+      </h2>
+      <a
+        href=""
+        class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
+        >Get Started</a
+      >
+    </div>
+
+    <p
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
+    >
+      The passion Discovery Workshop is an interactive experience designed to
+      help students connect who they are to what they want to do. Through guided
+      reflection, collaboration, and practical exercises, students leave with a
+      personal mission statement and a clear plan for turning their passions
+      into action.
+    </p>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px] md:gap-[24px]"
+    >
+      <!-- Card 1 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-1 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          1. Level Setting
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          We begin by outlining the workshop goals and expected outcomes.
+          Students are introduced to the concept of connecting passion to impact
+          and understand what they will walk away with: a personal mission
+          statement and an actionable plan for growth.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          2. Discovering the Superpower
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students complete a curated personality assessment to identify their
+          unique “superpower” — the natural strengths, traits, or abilities that
+          set them apart.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-3 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          3. Applying the Superpower
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students are grouped according to their superpowers and collaborate to
+          solve a real-world problem. This hands-on activity allows them to see
+          their strengths in action and understand how they can create
+          meaningful impact.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          4. Designing the Mission and Action Plan
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          In the final phase, students craft a personal mission statement and
+          develop an action plan to apply their passion in real life. They also
+          receive tailored resources such as resume templates, volunteer
+          opportunities, and access to our mentorship database to continue their
+          development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 2 - Mentorship Platform -->
+  <section
+    class="w-full my-[24px] h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex justify-between items-center"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
+      >
+        2. Mentorship Platform
+      </h2>
+      <a
+        href=""
+        class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
+        >Get Started</a
+      >
+    </div>
+
+    <p
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
+    >
+      The Excel Ed Mentorship Platform bridges the gap between curiosity and
+      career direction by connecting students with trusted, vetted mentors from
+      diverse industries across the globe. The goal is to help students gain
+      real world insight, professional confidence, and a deeper understanding of
+      how to turn their passions into purpose.
+    </p>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px] md:gap-[24px]"
+    >
+      <!-- Card 1 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-1 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          1. Building Your Profile & Finding Your Match
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students begin by creating a profile that highlights their interests,
+          goals, and career aspirations. The system automatically recommends
+          mentors that fit their path — or they can browse through a curated
+          dashboard of vetted professionals across diverse industrie
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          2. Meaningful Mentorship Sessions
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students meet their mentors virtually once or twice a month for
+          focused, goal-driven conversations. Each session is designed to help
+          them explore career options, develop key skills, and stay accountable
+          to their personal growth plan.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-3 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          3. Ongoing Learning & Skill Development
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Excel Ed’s mentorship program runs on a month-to-month model, giving
+          students the freedom to learn, pause, or grow at their own pace.
+          Whether they’re seeking short-term guidance or long-term career
+          growth, the platform evolves with them.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          4. Flexible, Student-Centered Membership
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          In the final phase, students craft a personal mission statement and
+          develop an action plan to apply their passion in real life. They also
+          receive tailored resources such as resume templates, volunteer
+          opportunities, and access to our mentorship database to continue their
+          development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 3 - College Counselling -->
+  <section
+    class="w-full my-[24px] h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex justify-between items-center"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
+      >
+        3. College Counselling
+      </h2>
+      <a
+        href=""
+        class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
+        >Get Started</a
+      >
+    </div>
+
+    <p
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
+    >
+      From choosing the right program to crafting essays that tell your story,
+      we help students turn their dreams into clear, actionable plans for
+      success.
+    </p>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px] md:gap-[24px]"
+    >
+      <!-- Card 1 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-1 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          1. Clarify Your Vision
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Through guided conversations, reflection exercises, and goal-mapping
+          sessions, students discover what truly motivates them — defining
+          academic and personal success on their own terms.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          2. Craft a Standout Story
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          We teach students how to transform real-life experiences into
+          authentic personal statements that stand out in any application. Every
+          essay becomes a reflection of purpose, not pressure.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-3 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          3. Build Winning Applications
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Our counselors help students choose programs that fit their goals,
+          organize timelines, and structure strong applications that highlight
+          both achievement and potential.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          4. Prepare for What’s Next
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students leave with curated resources — from interview prep guides to
+          scholarship and volunteer opportunities — ensuring they’re ready not
+          just for college, but for the journey ahead.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 4 - Resume Services -->
+  <section
+    class="w-full my-[24px] h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex justify-between items-center"
+    >
+      <h2
+        class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
+      >
+        4. Resume Services
+      </h2>
+      <a
+        href=""
+        class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
+        >Get Started</a
+      >
+    </div>
+
+    <p
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
+    >
+      We help students move beyond “experience lists” to create resumes and
+      cover letters that showcase impact, growth, and individuality.
+    </p>
+
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px] md:gap-[24px]"
+    >
+      <!-- Card 1 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-1 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          1. Discover Your Strengths
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          We start by helping students identify skills, experiences, and
+          accomplishments that matter — even those they didn’t realize were
+          valuable.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          2. Resume Writing Made Simple
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Students learn proven frameworks for writing clear, confident resumes
+          that highlight results, not just responsibilities.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-3 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          3. Cover Letter Coaching
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Through guided sessions, we teach students how to write cover letters
+          that connect their story to their goals — personal, persuasive, and
+          professional.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="w-full h-fit md:h-[379px] card card-2 p-[32px] flex flex-col gap-[32px] md:gap-0 justify-between"
+      >
+        <h4
+          class="txt-dark font-cg font-extrabold text-[24px] leading-[110%] tracking-[-0.5px]"
+        >
+          4. Resources for Lifelong Growth
+        </h4>
+
+        <p
+          class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
+        >
+          Access ready-to-use templates, real-world examples, and one-on-one
+          feedback sessions to polish every detail. Each student walks away with
+          tools they can use long after graduation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 - CTA -->
+  <div
+    data-aos="fade-up"
+    data-aos-duration="2000"
+    data-aos-delay="50"
+    class="w-full"
+  >
+    <CTASection />
+  </div>
 </BaseLayout>
+
+<style>
+  .card-1 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(126deg, #d6dc20 3.27%, #b0b444 48.57%, #d6dc20 98.62%);
+    background-blend-mode: overlay;
+  }
+
+  .card-2 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(321deg, #d2a898 1.23%, #c77c5f 49.25%, #d2a898 97.7%);
+    background-blend-mode: overlay;
+  }
+
+  .card-3 {
+    background:
+      url("../assets/svgs/texture.svg") repeat 0 0 / 100px 100px,
+      linear-gradient(321deg, #f6ef24 1.23%, #a5a138 49.25%, #f6ef24 97.7%);
+    background-blend-mode: overlay;
+  }
+
+  .card {
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:
+      -1px -1px 5px 0 rgba(0, 0, 0, 0.05),
+      1px 1px 5px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .card .txt-dark {
+    background: linear-gradient(180deg, #000 0%, #666 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>

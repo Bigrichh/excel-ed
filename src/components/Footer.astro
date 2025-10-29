@@ -1,0 +1,75 @@
+---
+import Logo from "../assets/svgs/logo.svg";
+import Instagram from "../assets/svgs/instagram.svg";
+import TikTok from "../assets/svgs/tiktok.svg";
+import X from "../assets/svgs/x.svg";
+
+---
+
+<footer class="w-full flex flex-col items-center gap-[48px] py-[48px] md:py-[80px]">
+  <div class="w-full flex flex-col lg:flex-row gap-[24px] lg:gap-0 justify-between items-start">
+    <div class="size-[120px]">
+      <Logo class="size-full object-cover" />
+    </div>
+
+    <div class="w-full lg:w-[810px] flex flex-col gap-[24px] md:gap-0 md:flex-row justify-between">
+      <!-- Company -->
+      <div class="flex flex-col gap-[24px]">
+        <h4 class="font-cg text-[20px] font-extrabold">Company</h4>
+        <div class="flex flex-col gap-[16px] text-[14px] font-rd">
+          <a href="/about">About Us</a>
+          <a href="/services">Services</a>
+          <a href="/partners">Partner With Us</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="flex flex-col gap-[24px]">
+        <h4 class="font-cg text-[20px] font-extrabold">Contact</h4>
+        <div class="flex flex-col gap-[16px] text-[14px] font-rd">
+          <a href="">email@email.com</a>
+          <a href="">000 000 0000</a>
+          <a href="">000 000 0000</a>
+        </div>
+      </div>
+      <!-- Legal -->
+      <div class="flex flex-col gap-[24px]">
+        <h4 class="font-cg text-[20px] font-extrabold">Legal</h4>
+        <div class="flex flex-col gap-[16px] text-[14px] font-rd">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms Of Services</a>
+        </div>
+      </div>
+      <!-- Socials -->
+      <div class="flex flex-col gap-[24px]">
+        <h4 class="font-cg text-[20px] font-extrabold">Socials</h4>
+        <div class="flex flex-row gap-[8px]">
+            <div class="p-[8px]">
+                <Instagram/>
+            </div>
+            <div class="p-[8px]">
+                <TikTok/>
+            </div>
+            <div class="p-[8px]">
+                <X/>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="font-cg text-[66px] md:text-[130px] lg:text-[200px] 2xl:text-[228px] tracking-[-8px] md:tracking-[-15px] lg:tracking-[-25px] text-[#E5E5E5] font-extrabold text-nowrap leading-[100%]">Excel Ed Consulting</p>
+</footer>
+
+<style>
+  a {
+    color: black;
+    opacity: 0.7;
+    transition: all 0.3s ease-out;
+  }
+
+  a:hover {
+    opacity: 1;
+    font-weight: 600;
+  }
+</style>
