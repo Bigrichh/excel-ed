@@ -1,0 +1,76 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Consultationn from "../components/vue/Consultation.vue";
+
+const pageTitle = "Schedule a Consultation"
+const pageDescription =
+  "Book a free consultation with Exceledd. Let’s talk about your goals, challenges, and how our design and digital solutions can help you grow. No pressure — just clarity and direction.";
+const ogURL = "https://exceledd.com/consultation";
+const keywords =
+  "Exceledd consultation, business strategy session, design consultation, digital growth strategy, branding consultation, web design meeting, Ghana creative agency, Exceledd meeting";
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  pageDescription={pageDescription}
+  ogURL={ogURL}
+  keywords={keywords}
+>
+  <!-- Section 1 - Schedule a Consultation -->
+  <section
+    id="consultation"
+    class="w-full h-fit flex flex-col py-[120px] gap-[48px]"
+  >
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col gap-[16px]"
+    >
+      <p class="text-[12.5px] font-rd font-black text-black">Schedule</p>
+      <div
+        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
+      >
+        <h2
+          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
+        >
+          Schedule a Consultation
+        </h2>
+        <p
+          class="w-full lg:w-[610px] 2xl:w-[676px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
+        >
+          Schedule a consultation to explore how Excel Ed can support your
+          journey toward clarity, confidence, and impact.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div
+      data-aos="fade-up"
+      data-aos-duration="2000"
+      data-aos-delay="50"
+      class="w-full flex flex-col lg:flex-row gap-[48px]"
+    >
+      <div
+        class="formimg rounded-[32px] w-full h-[450px] p-[32px] flex items-end justify-start"
+      >
+      </div>
+
+      <!-- form -->
+      <div class="w-full h-fit md:h-[450px]">
+        <Consultationn client:load />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/partners/sc-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+</style>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Test from "@/components/vue/Test.vue";
+
+
+const pageTitle = "SuperHero Test — Discover Your Strengths and Path to Success";
+const pageDescription =
+  "Take the Excel Ed Super Hero Test to uncover your unique strengths, passions, and potential career paths. Get personalized insights that guide your next steps toward college, mentorship, and personal growth.";
+const ogURL = "https://exceledd.com/superhero";
+const keywords =
+  "student assessment, personality test, career test, education guidance, student growth, college readiness, self discovery";
+
+---
+
+<BaseLayout
+  pageTitle={pageTitle}
+  pageDescription={pageDescription}
+  ogURL={ogURL}
+  keywords={keywords}
+>
+
+ <!-- Section 1 - Test -->
+  <Test client:load />
+</BaseLayout>

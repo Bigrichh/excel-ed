@@ -3,8 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import CTASection from "../components/CTASection.astro";
 
-const pageTitle =
-  "Excel Ed Services";
+const pageTitle = "Excel Ed Services";
 const pageDescription =
   "Explore Excel Ed’s student-centered programs: Discover You Workshops, College Counseling, Resume Services, and our Mentorship Platform. Each designed to help students find direction, build confidence, and take action.";
 const ogURL = "https://exceledd.com/services";
@@ -35,7 +34,7 @@ const keywords =
         class="w-full lg:w-[610px] 2xl:w-[710px] font-rd text-[18px] 2xl:text-[20px] leading-[110%] font-bold text-black/50"
       >
         Our services are designed to help students and young professionals
-        discover what drives them — and give them the tools, clarity, and
+        discover what drives them and give them the tools, clarity, and
         confidence to build a life around it. From mentorship to career
         guidance, every program is built to make personal growth practical and
         powerful.
@@ -45,13 +44,14 @@ const keywords =
 
   <!-- Service 1 - Passion Discovery Workshop -->
   <section
+    id="passion-discovery"
     class="w-full h-fit my-[24px] flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
   >
     <div
       data-aos="fade-up"
       data-aos-duration="2000"
       data-aos-delay="50"
-      class="w-full flex justify-between items-center"
+      class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-start md:items-center"
     >
       <h2
         class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
@@ -59,7 +59,7 @@ const keywords =
         1. Passion Discovery Workshop
       </h2>
       <a
-        href=""
+        href="/consultation"
         class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
         >Get Started</a
       >
@@ -117,7 +117,7 @@ const keywords =
           class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
         >
           Students complete a curated personality assessment to identify their
-          unique “superpower” — the natural strengths, traits, or abilities that
+          unique “superpower”. The natural strengths, traits, or abilities that
           set them apart.
         </p>
       </div>
@@ -171,18 +171,25 @@ const keywords =
       data-aos="fade-up"
       data-aos-duration="2000"
       data-aos-delay="50"
-      class="w-full flex justify-between items-center"
+      class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-start md:items-center"
     >
       <h2
         class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
       >
         2. Mentorship Platform
       </h2>
-      <a
-        href=""
-        class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
-        >Get Started</a
-      >
+      <div class="w-fit flex items-center gap-[16px]">
+        <a
+          href="/mentors"
+          class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-black hover:bg-white hover:text-black text-nowrap"
+          >Become a Mentor</a
+        >
+        <a
+          href=""
+          class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
+          >Get Started</a
+        >
+      </div>
     </div>
 
     <p
@@ -219,7 +226,7 @@ const keywords =
         >
           Students begin by creating a profile that highlights their interests,
           goals, and career aspirations. The system automatically recommends
-          mentors that fit their path — or they can browse through a curated
+          mentors that fit their path or they can browse through a curated
           dashboard of vetted professionals across diverse industrie
         </p>
       </div>
@@ -286,13 +293,14 @@ const keywords =
 
   <!-- Service 3 - College Counselling -->
   <section
+    id="college-counselling"
     class="w-full my-[24px] h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
   >
     <div
       data-aos="fade-up"
       data-aos-duration="2000"
       data-aos-delay="50"
-      class="w-full flex justify-between items-center"
+      class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-start md:items-center"
     >
       <h2
         class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
@@ -300,7 +308,7 @@ const keywords =
         3. College Counselling
       </h2>
       <a
-        href=""
+        href="/consultation"
         class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
         >Get Started</a
       >
@@ -337,7 +345,7 @@ const keywords =
           class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
         >
           Through guided conversations, reflection exercises, and goal-mapping
-          sessions, students discover what truly motivates them — defining
+          sessions, students discover what truly motivates them, defining
           academic and personal success on their own terms.
         </p>
       </div>
@@ -390,8 +398,8 @@ const keywords =
         <p
           class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
         >
-          Students leave with curated resources — from interview prep guides to
-          scholarship and volunteer opportunities — ensuring they’re ready not
+          Students leave with curated resources. From interview prep guides to
+          scholarship and volunteer opportunities. Ensuring they’re ready not
           just for college, but for the journey ahead.
         </p>
       </div>
@@ -400,13 +408,14 @@ const keywords =
 
   <!-- Service 4 - Resume Services -->
   <section
+    id="resume-services"
     class="w-full my-[24px] h-fit flex flex-col p-[32px] md:p-[64px] gap-[48px] bg-primaryy rounded-[32px]"
   >
     <div
       data-aos="fade-up"
       data-aos-duration="2000"
       data-aos-delay="50"
-      class="w-full flex justify-between items-center"
+      class="w-full flex flex-col md:flex-row gap-[16px] md:gap-0 justify-between items-start md:items-center"
     >
       <h2
         class="txt-grad-dark leading-[100%] text-[24px] md:text-[40px] tracking-[-1px] md:tracking-[-2.5px] font-cg font-extrabold"
@@ -414,7 +423,7 @@ const keywords =
         4. Resume Services
       </h2>
       <a
-        href=""
+        href="/consultation"
         class="w-full md:w-fit btn px-[24px] py-[12px] text-white bg-secondaryy hover:bg-white hover:text-black text-nowrap"
         >Get Started</a
       >
@@ -450,7 +459,7 @@ const keywords =
           class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
         >
           We start by helping students identify skills, experiences, and
-          accomplishments that matter — even those they didn’t realize were
+          accomplishments that matter even those they didn’t realize were
           valuable.
         </p>
       </div>
@@ -485,7 +494,7 @@ const keywords =
           class="font-rd font-semibold text-[18px] tracking-[-0.5px] leading-[110%]"
         >
           Through guided sessions, we teach students how to write cover letters
-          that connect their story to their goals — personal, persuasive, and
+          that connect their story to their goals. Personal, persuasive, and
           professional.
         </p>
       </div>
@@ -510,7 +519,7 @@ const keywords =
     </div>
   </section>
 
-  <!-- Section 4 - CTA -->
+  <!-- Section 2 - CTA -->
   <div
     data-aos="fade-up"
     data-aos-duration="2000"
@@ -556,5 +565,20 @@ const keywords =
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/partners/sc-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
+  }
+  .formimg {
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000 100%),
+      url("/images/partners/sc-formimg.webp") no-repeat center center;
+    background-size: cover;
+    border: none !important;
   }
 </style>

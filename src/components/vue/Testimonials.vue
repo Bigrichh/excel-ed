@@ -24,7 +24,7 @@
                   />
                 </div> -->
                 <p class="font-cg text-[18px] font-black leading-[90%]">
-                  {{ review.name }} heloooo
+                  {{ review.name }} 
                 </p>
               </div>
               <p

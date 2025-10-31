@@ -3,7 +3,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import BenefitsBento from "../components/BenefitsBento.astro";
 import PartnerShipOptions from "../components/PartnerShipOptions.astro";
-import Consultation from "../components/vue/Consultation.vue";
 
 import ArrowOutDown from "../assets/svgs/arrow-outline-down.svg";
 
@@ -59,7 +58,7 @@ const keywords =
           >
             Ready to empower your students to turn passion into impact? We
             partner with schools, universities, and organizations to help
-            students connect what they learn to who they are — and who they’re
+            students connect what they learn to who they are and who they’re
             becoming.
           </p>
         </div>
@@ -144,51 +143,6 @@ const keywords =
       class="w-full"
     >
       <PartnerShipOptions />
-    </div>
-  </section>
-
-  <!-- Section 4 - Schedule a Consultation -->
-  <section class="w-full h-fit flex flex-col py-[80px] gap-[48px]">
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      data-aos-delay="50"
-      class="w-full flex flex-col gap-[16px]"
-    >
-      <p class="text-[12.5px] font-rd font-black text-black">Schedule</p>
-      <div
-        class="w-full flex flex-col lg:flex-row gap-[16px] lg:gap-0 items-start justify-between"
-      >
-        <h2
-          class="txt-grad-dark leading-[100%] text-[32px] md:text-[48px] lg:text-[56px] 2xl:text-[64px] tracking-[-1px] md:tracking-[-2.5px] lg:tracking-[-4px] font-cg font-extrabold"
-        >
-          Schedule a Consultation
-        </h2>
-        <p
-          class="w-full lg:w-[610px] 2xl:w-[676px] font-rd text-[18px] 2xl:text-[20px] leading-[130%] font-bold text-black/50"
-        >
-          Schedule a consultation to explore how Excel Ed can support your
-          students’ journey toward clarity, confidence, and impact.
-        </p>
-      </div>
-    </div>
-
-    <!-- Form Section -->
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      data-aos-delay="50"
-      class="w-full flex flex-col lg:flex-row gap-[48px]"
-    >
-      <div
-        class="formimg rounded-[32px] w-full h-[450px] p-[32px] flex items-end justify-start"
-      >
-      </div>
-
-      <!-- form -->
-      <div class="w-full h-fit md:h-[450px]">
-        <Consultation client:load />
-      </div>
     </div>
   </section>
 </BaseLayout>
